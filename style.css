@@ -1,0 +1,256 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}@import url("https://fonts.googleapis.com/css?family=Roboto:400");
+
+/* Set font of all elements to 'Roboto' */
+* {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+/* Remove outline of all elements on focus */
+*:focus {
+	outline: 0;
+}
+
+body {
+	background: black;  
+}
+
+h3 {
+	text-align: center;
+    color: white;
+}
+
+/* Add styles to 'container' class */
+.container {
+	padding: 12px 24px 24px 24px;
+	margin: 48px 12px;
+	background: url(bg.png);
+	border-radius: 4px;
+}
+
+/* Add styles to 'label' selector */
+label {
+	font-size: 0.85em;
+	margin-left: 12px;
+    color: white;
+}
+
+/* Add styles to 'input' and 'textarea' selectors */
+input[type=text],input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Add styles to show 'focus' of selector */
+input[type=text]:focus,input[type=email]:focus, textarea:focus {
+	border: 1px solid green;
+}
+
+/* Add styles to the submit button */
+input[type=submit] {
+	background:rgb(16, 16, 17);
+	margin: 0 auto;
+	outline: 0;
+	color: white;
+	border: 0;
+	padding: 12px 24px;
+	border-radius: 4px;
+	transition: all ease-in-out 0.1s;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+/* Add styles for 'focus' property */
+input[type=submit]:focus {
+	background: #A5D6A7;
+	color: whitesmoke;
+}
+
+/* Style 'hover' property */
+input[type=submit]:hover {
+	background:rgb(96, 65, 153);
+}
+
+/* Align items to center of the 'div' with the class 'center' */
+.center {
+	text-align: center;
+}
+
+.primary-header a,
+  .primary-footer a {
+    color: #fff;
+  }
+  
+  .primary-header a:hover,
+  .primary-footer a:hover {
+    color: #648880;
+  } 
+  .tagline {
+    margin: 66px 0 22px 0;
+    text-align: right;
+    color: #648880;
+    padding-right: 100px;
+  }
+  
+  .primary-nav {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+  }
+  .nav {
+    text-align: right;
+    padding-right: 100px;
+  }
+  
+  .nav li {
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: top;
+    
+  }
+  
+  .nav li:last-child {
+    margin-right: 0;
+  }  
+  ol, ul {
+    list-style: none;
+  }
+  a {
+    color: #648880;
+    text-decoration:none;
+  }
+  
+  a:hover {
+    color: #a9b2b9;
+  }
+  
+  p a {
+    border-bottom: 1px solid #dfe2e5;
+  }
+  h1{
+	font-size: 45px;
+	padding-bottom: 10px;
+}
+.footer{
+    background-color: rgb(255, 251, 251);
+    padding: 50Px;
+}
+
+.foot{
+    background-color: rgb(255, 254, 254);
+    max-width: 100%;
+    margin: auto;
+
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+    color: rgb(19, 9, 9);
+    margin: 18px;
+}
+
+.footer-col h4::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+  
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    transition: all 0.3s ease;
+    font-weight: 300;
+    display: block;
+    color: rgb(24, 22, 24);
+}
+
+.footer-col ul li a:hover{
+    color: rgb(177, 81, 81);
+    padding-left: 10px;
+
+    
+}
+
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    color: rgb(15, 15, 15);
+    background-color: rgb(0, 0, 0);
+    margin-right:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+   
+    
+
+}
+
+
+.footer-col .social-links a:hover{
+    color: rgb(31, 28, 28);
+    background-color: rgb(0, 0, 0);
+    background-color: rgb(1, 10, 17);
+    color: black;
+}
+
+@media(max-width:767px){
+    .footer-col{
+        width: 50%;
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:574px){
+    .footer-col{
+        width: 100%;
+       
+    }
+}
